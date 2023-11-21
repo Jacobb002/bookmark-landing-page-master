@@ -105,15 +105,31 @@ a:visited {
 
 .get-btn a {
   padding: 10px 20px;
-  border: 2px solid hsl(229, 31%, 21%);
   border-radius: 4px;
   font-weight: 500;
   font-size: 13px;
 }
 
-.get-btn a:hover {
-  border-color: hsl(231, 69%, 60%);
-  color: hsl(231, 69%, 60%);
+.get-chrome {
+  border: 2px solid hsl(231, 69%, 60%);
+  background: hsl(231, 69%, 60%);
+  color: #fff !important;
+}
+
+.get-chrome:hover {
+  background: transparent;
+  color: hsl(231, 69%, 60%) !important;
+}
+
+.get-firefox {
+  border: 2px solid hsl(229, 8%, 60%);
+  background: hsl(229, 8%, 60%);
+  color: hsl(229, 31%, 21%) !important;
+}
+
+.get-firefox:hover {
+  background: transparent;
+  border: 2px solid hsl(229, 31%, 21%);
 }
 
 .bookmark-manager .right-section {
