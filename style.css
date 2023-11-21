@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: hsl(229, 31%, 21%);
+}
+
+.main {
+  margin: 30px 100px 50px 100px;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 120px;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  font-size: 15px;
+}
+
+.nav-bar ul li a {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-bar ul li a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.login-btn {
+  background: hsl(0, 94%, 66%);
+  padding: 10px 30px;
+  border: 2px solid transparent;
+  color: #fff !important;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background: transparent;
+  border: 2px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%) !important;
+}
+
+.bookmark-manager {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark-manager .left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 45%;
+}
+
+.bookmark-manager .left-section h1 {
+  width: 400px;
+  color: hsl(229, 31%, 21%);
+}
+
+.bookmark-manager .left-section p {
+  width: 500px;
+  font-size: 18px;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.5;
+}
+
+.get-btn {
+  display: flex;
+  gap: 15px;
+}
+
+.get-btn a {
+  padding: 10px 20px;
+  border: 2px solid hsl(229, 31%, 21%);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.get-btn a:hover {
+  border-color: hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
+
+.bookmark-manager .right-section {
+  position: relative;
+}
+
+.first-bg {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  background: hsl(231, 69%, 60%);
+  height: 350px;
+  width: 100px;
+  z-index: -1;
+}
+
+.first-bg::before {
+  position: absolute;
+  content: "";
+  background: hsl(231, 69%, 60%);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 350px;
+  width: 350px;
+  right: 100%;
+}
+
+.first-bg::after {
+  position: absolute;
+  content: "";
+  background: hsl(231, 69%, 60%);
+  height: 100%;
+  width: 100vh;
+  left: 100%;
+}
