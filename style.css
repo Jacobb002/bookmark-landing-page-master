@@ -165,3 +165,119 @@ a:visited {
   width: 100vh;
   left: 100%;
 }
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.features-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.features-body h2 {
+  font-weight: 500;
+}
+
+.features-body p {
+  text-align: center;
+  width: 500px;
+  color: hsl(229, 8%, 60%);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.features-choose {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  text-align: center;
+}
+
+.features-choose div {
+  color: hsl(229, 8%, 60%);
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  cursor: pointer;
+}
+
+.features-choose div:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.features-choose div.active {
+  color: hsl(229, 31%, 21%);
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+
+.features-details {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+}
+
+.features-details .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.features-details .right-section p {
+  width: 400px;
+}
+
+.features-details .right-section button {
+  border: 2px solid hsl(231, 69%, 60%);
+  padding: 11px;
+  width: 30%;
+  background: hsl(231, 69%, 60%);
+  font-family: inherit;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.features-details .right-section button:hover {
+  background: transparent;
+  color: hsl(229, 31%, 21%);
+  font-weight: 400;
+}
+
+.second-bg {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  background: hsl(231, 69%, 60%);
+  height: 350px;
+  width: 100px;
+  z-index: -1;
+}
+
+.second-bg::before {
+  position: absolute;
+  content: "";
+  background: hsl(231, 69%, 60%);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 350px;
+  width: 350px;
+  left: 100%;
+}
+
+.second-bg::after {
+  position: absolute;
+  content: "";
+  background: hsl(231, 69%, 60%);
+  height: 100%;
+  width: 100vh;
+  right: 100%;
+}
