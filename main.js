@@ -1,3 +1,5 @@
+// Features section
+
 const simpleBookmarking = {
   title: "Bookmark in one click",
   description: `Organize your bookmarks however you like. Our simple drag-and-drop
@@ -52,4 +54,17 @@ speedySearchingBtn.addEventListener("click", () => {
 const easySharingBtn = document.querySelector(".easy-sharing");
 easySharingBtn.addEventListener("click", () => {
   featuresSectionChangeText(easySharing, "easy-sharing");
+});
+
+// FAQ section
+
+const questionBtn = document.querySelectorAll(".question-header");
+questionBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (element.parentElement.classList.contains("active")) {
+      element.parentElement.classList.remove("active");
+    } else {
+      element.parentElement.classList.add("active");
+    }
+  });
 });
