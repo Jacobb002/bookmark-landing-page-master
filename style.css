@@ -254,7 +254,7 @@ a:visited {
 
 .second-bg {
   position: absolute;
-  left: 0;
+  left: 300px;
   top: 25%;
   background: hsl(231, 69%, 60%);
   height: 350px;
@@ -280,4 +280,99 @@ a:visited {
   height: 100%;
   width: 100vh;
   right: 100%;
+}
+
+.download-extension-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.extension-body h2 {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.extension-body p {
+  width: 500px;
+  color: hsl(229, 8%, 60%);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.add-extension {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 500px;
+  width: 795px;
+  gap: 25px;
+}
+
+.extension > img {
+  width: 80px;
+  height: 80px;
+}
+
+.extension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 250px;
+  border-radius: 8px;
+  padding-top: 25px;
+  -webkit-box-shadow: 0px 16px 15px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 16px 15px -12px rgba(66, 68, 90, 1);
+  box-shadow: 0px 16px 15px -12px rgba(66, 68, 90, 1);
+}
+
+.extension-btn {
+  padding: 5px;
+}
+
+.extension-btn div {
+  padding: 10px;
+}
+
+.extension-btn div button {
+  border: 2px solid hsl(231, 69%, 60%);
+  border-radius: 4px;
+  background: hsl(231, 69%, 60%);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.extension-btn div button:hover {
+  background: transparent;
+  color: hsl(231, 69%, 60%);
+}
+
+.extension-btn img {
+  width: 100%;
+}
+
+.extension-details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.firefox-extension {
+  margin-top: 5%;
+}
+
+.opera-extension {
+  margin-top: 10%;
 }
