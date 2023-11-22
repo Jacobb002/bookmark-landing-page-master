@@ -543,12 +543,12 @@ a:visited {
   color: hsl(0, 94%, 66%);
 }
 
-.right-section {
+.footer .right-section {
   display: flex;
   margin-right: 100px;
   gap: 40px;
 }
 
-.right-section img:hover {
+.footer .right-section img:hover {
   filter: brightness(1.5) hue-rotate(229deg) saturate(150%) contrast(0.8);
 }
